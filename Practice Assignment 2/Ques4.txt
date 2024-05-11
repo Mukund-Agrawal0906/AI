@@ -1,0 +1,5 @@
+f1 = open('Text.txt','r')
+ln = f1.readlines()
+for i in ln:
+        if(i[0]!='T'):
+                print i

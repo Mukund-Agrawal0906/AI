@@ -1,0 +1,23 @@
+import numpy as np
+
+array_zeros = np.zeros(10)
+array_ones = np.ones(10)
+array_fives = np.ones(10) * 5
+
+array_even_integers = np.arange(10, 51, 2)
+
+random_number = np.random.rand()
+
+matrix = np.arange(1, 21).reshape(4, 5)
+
+np.savetxt('matrix.txt', matrix)
+
+loaded_matrix = np.loadtxt('matrix.txt')
+
+print "i. Array of 10 zeros:\n", array_zeros
+print "   Array of 10 ones:\n", array_ones
+print "   Array of 10 fives:\n", array_fives
+print "\nii. Array of even integers from 10 to 50:\n", array_even_integers
+print "\niii. Random number between 0 and 1:", random_number
+print "\niv. Original Matrix:\n", matrix
+print "\n   Loaded Matrix:\n", loaded_matrix

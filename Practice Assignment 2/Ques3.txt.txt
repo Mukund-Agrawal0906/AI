@@ -1,0 +1,5 @@
+f1 = open('example.txt','a')
+f1.write("\nThis is another line of writing nonsense.")
+f1.close()
+f2 = open('example.txt','r')
+print f2.read()

@@ -1,0 +1,5 @@
+f1 = open('example.txt','r')
+li =f1.readlines()
+f2 = open('Q5.txt','w')
+f2.writelines(li)
+~                         

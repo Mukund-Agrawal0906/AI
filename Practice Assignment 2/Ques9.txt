@@ -1,0 +1,14 @@
+import numpy as np
+
+random_matrix = np.random.randint(20,size=(8, 7))
+max_values = np.max(random_matrix, axis=0)
+min_values = np.min(random_matrix, axis=0)
+
+
+print "Random Matrix:"
+print random_matrix
+print "\nMaximum values for each feature:"
+print max_values
+
+print "\nMinimum values for each feature:"
+print min_values
